@@ -3,60 +3,92 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio</title>
+    <title>Laundry Landing Page</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+
     <!-- Header Section -->
     <header>
         <div class="container">
-            <h1>My Portfolio</h1>
+            <h1>Laundry Services</h1>
             <nav>
                 <ul>
-                    <li><a href="#about">About</a></li>
-                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#about">About Us</a></li>
                     <li><a href="#contact">Contact</a></li>
                 </ul>
             </nav>
         </div>
     </header>
 
-    <!-- About Section -->
-    <section id="about" class="about">
-        <div class="container">
-            <h2>About Me</h2>
-            <p>Hello! I'm a web developer passionate about creating beautiful and functional websites. I specialize in front-end development and have experience with HTML, CSS, JavaScript, and more.</p>
+    <!-- Hero Section with Carousel -->
+    <section id="home" class="hero">
+        <div class="carousel">
+            <div class="carousel-item active">
+                <img src="https://lh3.googleusercontent.com/blogger_img_proxy/AEn0k_vDuxXyU5YYK0gLocYvGWlMNXD-00rzOQCVlYhU4MvtaR3IXpS-xawqRWD9mKBfgf1Lme-Z_lPOhh0kCpDdJF5_zTvgNdtwOBAFArLP06PSR8uprjR_xmfXNjs0=s0-d" alt="Laundry Service 1">
+            </div>
+            <div class="carousel-item">
+                <img src="https://lh3.googleusercontent.com/blogger_img_proxy/AEn0k_ttvIVgL-yWoFtIR7Bc_upLcbDAf56BTEYuk-Xgwzy4EjOWAocPf0iTtToopvFZCzr9aJcr14lqg4BJVAyf7ZgoXJ-Fe3zJ2J0I93UBnUXqv_T1eoYBhBbRW3o5WQ=s0-d" alt="Laundry Service 2">
+            </div>
+            <div class="carousel-item">
+                <img src="https://lh3.googleusercontent.com/blogger_img_proxy/AEn0k_t4twfEZaGuHqPPtr1FdiX7fnES6ToYc4BqGESj01uYqUGdsZeZHnCACs_IdW50jJoYlXY8brhRzGPledUd71l05uKTfzkdFx6ucON2HXxoZPfNpZQtX6q3mGvxzA=s0-d" alt="Laundry Service 3">
+            </div>
         </div>
+        <button class="prev" onclick="prevSlide()">&#10094;</button>
+        <button class="next" onclick="nextSlide()">&#10095;</button>
     </section>
 
-    <!-- Projects Section -->
-    <section id="projects" class="projects">
+    <!-- Services Section -->
+    <section id="services" class="services">
         <div class="container">
-            <h2>My Projects</h2>
-            <div class="project-grid">
-                <div class="project">
-                    <h3>Project 1</h3>
-                    <p>A responsive website built using HTML, CSS, and JavaScript.</p>
+            <h2>Our Services</h2>
+            <div class="service-list">
+                <div class="service-item">
+                    <h3>Washing</h3>
+                    <p>We provide top-notch washing services for all types of fabrics.</p>
                 </div>
-                <div class="project">
-                    <h3>Project 2</h3>
-                    <p>An e-commerce platform developed using React and Node.js.</p>
+                <div class="service-item">
+                    <h3>Dry Cleaning</h3>
+                    <p>Our dry cleaning service ensures your delicate clothes are handled with care.</p>
                 </div>
-                <div class="project">
-                    <h3>Project 3</h3>
-                    <p>A mobile app prototype designed using Figma and implemented with Flutter.</p>
+                <div class="service-item">
+                    <h3>Folding & Ironing</h3>
+                    <p>We offer professional folding and ironing services to keep your clothes crisp.</p>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Contact Section -->
-    <footer id="contact" class="footer">
+    <!-- About Us Section -->
+    <section id="about" class="about">
         <div class="container">
-            <h2>Contact Me</h2>
-            <p>Email: example@example.com</p>
-            <p>Phone: (123) 456-7890</p>
+            <h2>About Us</h2>
+            <p>We are a trusted laundry service provider with years of experience in the industry. Our goal is to make your life easier by taking care of your laundry needs.</p>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2>Contact Us</h2>
+            <form>
+                <input type="text" placeholder="Your Name" required>
+                <input type="email" placeholder="Your Email" required>
+                <textarea placeholder="Your Message" required></textarea>
+                <button type="submit">Send Message</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <p>&copy; 2023 Laundry Services. All rights reserved.</p>
         </div>
     </footer>
+
+    <script src="script.js"></script>
 </body>
 </html>
